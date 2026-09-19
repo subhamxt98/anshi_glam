@@ -1,0 +1,40 @@
+/* ============================================
+   ISHANI COSMETICS - GLOBAL STYLES
+   ============================================ */
+
+/* ✅ Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ HTML + Body - Black Background (Bootstrap Override) */
+html {
+  background-color: #050505 !important;
+  height: 100%;
+}
+
+body {
+  background-color: #050505 !important;
+  min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+/* ✅ Root - Full Height + Flex */
+#root {
+  background-color: #050505;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ Bootstrap Override - Body Variables */
+:root {
+  --bs-body-bg: #050505;
+  --bs-body-color: #FFFFFF;
+}

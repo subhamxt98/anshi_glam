@@ -1,0 +1,655 @@
+/* ============================================
+   ISHANI COSMETICS — NAVBAR (FULL)
+   Black + blue theme · white icons · responsive
+   ============================================ */
+
+.ishani-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #0A0A0A;
+  border-bottom: 1px solid #1A1A1A;
+  transition: background 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
+  padding: 0.9rem 0;
+  overflow: visible;
+}
+
+.ishani-navbar.scrolled {
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom-color: #252525;
+  padding: 0.6rem 0;
+}
+
+/* ===== NAV INNER WRAPPER ===== */
+.ishani-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 16px;
+}
+
+/* ===== LOGO ===== */
+.ishani-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.ishani-logo-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #2A2A2A;
+  flex-shrink: 0;
+}
+
+.ishani-logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ishani-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.ishani-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.ishani-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  color: #6B7280;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+/* ===== DESKTOP NAV LINKS ===== */
+.ishani-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex: 1;
+  justify-content: center;
+}
+
+.ishani-nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #9CA3AF;
+  text-decoration: none;
+  transition: color 0.25s ease;
+  position: relative;
+}
+
+.ishani-nav-link:hover { color: #FFFFFF; }
+.ishani-nav-link.active { color: #FFFFFF; font-weight: 500; }
+
+/* ===== RIGHT SIDE ===== */
+.ishani-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* ===== CART BUTTON ===== */
+.ishani-cart-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #2A2A2A;
+  color: #FFFFFF;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.ishani-cart-btn:hover {
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.ishani-cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  background: #3B82F6;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid #0A0A0A;
+}
+
+/* ===== USER AVATAR ===== */
+.ishani-user-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: #3B82F6;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.ishani-user-btn:hover { background: #2563EB; }
+
+/* ===== AUTH ICONS ===== */
+.ishani-auth-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ishani-auth-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #2A2A2A;
+  color: #FFFFFF;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.ishani-auth-icon:hover {
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+  color: #FFFFFF;
+}
+
+.ishani-auth-icon.signup {
+  background: #3B82F6;
+  border-color: #3B82F6;
+  color: #FFFFFF;
+}
+
+.ishani-auth-icon.signup:hover {
+  background: #2563EB;
+  border-color: #2563EB;
+}
+
+/* ===== HAMBURGER ===== */
+.ishani-toggle {
+  display: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #2A2A2A;
+  color: #FFFFFF;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.ishani-toggle:hover {
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+}
+
+/* ============================================
+   TOOLTIP
+   ============================================ */
+[data-tooltip] { position: relative; }
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  background: #1A1A1A;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  border: 1px solid #2A2A2A;
+  z-index: 10;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ============================================
+   DROPDOWN — Dark premium (white box nahi)
+   ============================================ */
+.dropdown-menu.ishani-dropdown {
+  background: #0A0A0A !important;
+  border: 1px solid #1A1A1A !important;
+}
+
+.ishani-dropdown {
+  background: #0A0A0A !important;
+  border: 1px solid #1A1A1A !important;
+  border-radius: 12px;
+  padding: 6px;
+  min-width: 240px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8),
+              0 0 0 1px rgba(59, 130, 246, 0.1);
+  margin-top: 12px;
+  animation: dropdownFade 0.2s ease;
+  overflow: hidden;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* User info header */
+.ishani-dropdown-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.02));
+  margin-bottom: 4px;
+}
+
+.ishani-dropdown-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3B82F6, #2563EB);
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.ishani-dropdown-userinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.ishani-dropdown-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ishani-dropdown-email {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: #6B7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Menu items */
+.ishani-dropdown-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9CA3AF !important;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+  background: transparent !important;
+  border: none;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ishani-dropdown-item i {
+  font-size: 15px;
+  color: #6B7280;
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.ishani-dropdown-item span {
+  flex: 1;
+}
+
+.ishani-dropdown-item:hover {
+  background: #1A1A1A !important;
+  color: #FFFFFF !important;
+  transform: translateX(2px);
+}
+
+.ishani-dropdown-item:hover i {
+  color: #3B82F6;
+}
+
+/* Cart badge */
+.ishani-dropdown-badge {
+  background: #3B82F6;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 600;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Divider */
+.ishani-dropdown-divider {
+  border-color: #1A1A1A !important;
+  margin: 4px 0;
+  opacity: 1;
+}
+
+/* Logout */
+.ishani-dropdown-item.logout-item {
+  color: #EF4444 !important;
+}
+
+.ishani-dropdown-item.logout-item i {
+  color: #EF4444;
+}
+
+.ishani-dropdown-item.logout-item:hover {
+  background: rgba(239, 68, 68, 0.1) !important;
+  color: #EF4444 !important;
+}
+
+.ishani-dropdown-item.logout-item:hover i {
+  color: #EF4444;
+}
+
+/* ============================================
+   MOBILE MENU — slide down
+   ============================================ */
+.ishani-mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #0A0A0A;
+  border-bottom: 1px solid #1A1A1A;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  z-index: 1050;
+}
+
+.ishani-mobile-menu.open {
+  max-height: 600px;
+}
+
+.ishani-mobile-inner {
+  padding: 0.8rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Mobile nav link */
+.ishani-mobile-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9CA3AF;
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.ishani-mobile-link i {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  color: #6B7280;
+  transition: color 0.2s ease;
+}
+
+.ishani-mobile-link span {
+  flex: 1;
+}
+
+.ishani-mobile-link:hover {
+  color: #FFFFFF;
+  background: #1A1A1A;
+}
+
+.ishani-mobile-link:hover i { color: #FFFFFF; }
+
+.ishani-mobile-link.active {
+  color: #FFFFFF;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.ishani-mobile-link.active i { color: #3B82F6; }
+
+/* Mobile auth buttons */
+.ishani-mobile-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 12px;
+  margin-top: 8px;
+  border-top: 1px solid #1A1A1A;
+}
+
+.ishani-mobile-auth-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.ishani-mobile-auth-btn i { font-size: 15px; }
+
+.ishani-mobile-auth-btn.signin {
+  background: transparent;
+  border: 1px solid #2A2A2A;
+  color: #FFFFFF;
+}
+
+.ishani-mobile-auth-btn.signin:hover {
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.ishani-mobile-auth-btn.signup {
+  background: #3B82F6;
+  border: 1px solid #3B82F6;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.ishani-mobile-auth-btn.signup:hover {
+  background: #2563EB;
+  border-color: #2563EB;
+}
+
+/* ============================================
+   BACKDROP (mobile menu open hone pe)
+   ============================================ */
+.ishani-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+/* Tablet & below */
+@media (max-width: 991px) {
+  .ishani-nav-inner {
+    padding: 0 1.2rem;
+  }
+
+  .ishani-nav-links {
+    display: none;
+  }
+
+  .ishani-toggle {
+    display: flex;
+  }
+
+  .ishani-logo-text {
+    display: none;
+  }
+
+  [data-tooltip]::after {
+    display: none;
+  }
+
+  .ishani-dropdown {
+    min-width: 240px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .ishani-navbar {
+    padding: 0.7rem 0;
+  }
+
+  .ishani-nav-inner {
+    padding: 0 0.9rem;
+    gap: 8px;
+  }
+
+  .ishani-right {
+    gap: 6px;
+  }
+
+  .ishani-cart-btn,
+  .ishani-auth-icon,
+  .ishani-user-btn,
+  .ishani-toggle {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+
+  .ishani-auth-icons {
+    gap: 6px;
+  }
+
+  .ishani-mobile-inner {
+    padding: 0.7rem 0.8rem 0.9rem;
+  }
+
+  .ishani-dropdown {
+    min-width: 220px;
+  }
+}
+
+/* Extra small — hide Sign Up icon */
+@media (max-width: 360px) {
+  .ishani-auth-icons .ishani-auth-icon.signup {
+    display: none;
+  }
+}

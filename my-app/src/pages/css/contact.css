@@ -1,0 +1,488 @@
+/* ============================================================
+   ANSHIÉ's GLAM — Contact Page
+   Black + Blue theme (matches home page)
+   ============================================================ */
+
+* { box-sizing: border-box; }
+
+.glam-contact-page {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(circle at 15% 10%, #0a0a12 0%, #0a0a0a 55%, #050505 100%);
+  padding: 4rem 1.5rem 5rem;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: #f0f0f0;
+}
+
+/* ---------- Soft background glows ---------- */
+.glam-contact-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glam-contact-bg .glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+}
+
+.glam-contact-bg .glow-1 {
+  width: 500px;
+  height: 500px;
+  top: -180px;
+  left: -160px;
+  background: #3B82F6;
+  opacity: 0.12;
+}
+
+.glam-contact-bg .glow-2 {
+  width: 420px;
+  height: 420px;
+  bottom: -140px;
+  right: -120px;
+  background: #60A5FA;
+  opacity: 0.08;
+}
+
+/* ---------- Hero ---------- */
+.glam-contact-hero {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+}
+
+.glam-contact-badge {
+  display: inline-block;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #60A5FA;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  padding: 0.35rem 0.95rem;
+  border-radius: 40px;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.glam-contact-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.glam-contact-sub {
+  color: #9CA3AF;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---------- Main grid ---------- */
+.glam-contact-wrap {
+  position: relative;
+  z-index: 2;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2rem;
+}
+
+/* ---------- LEFT — Info cards ---------- */
+.glam-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.glam-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.3rem 1.2rem;
+  background: #0F0F0F;
+  border: 1px solid #1A1A1A;
+  border-radius: 14px;
+  transition: all 0.25s ease;
+}
+
+.glam-info-card:hover {
+  border-color: #3B82F6;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -12px rgba(59, 130, 246, 0.25);
+}
+
+.glam-info-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #60A5FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+.glam-info-text h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.3px;
+}
+
+.glam-info-text p {
+  margin: 0;
+  font-size: 0.83rem;
+  color: #9CA3AF;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Socials */
+.glam-info-socials {
+  margin-top: auto;
+  padding: 1.2rem 1.2rem;
+  background: #0F0F0F;
+  border: 1px solid #1A1A1A;
+  border-radius: 14px;
+}
+
+.glam-info-socials-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6B7280;
+  margin-bottom: 0.8rem;
+}
+
+.glam-info-socials-row {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.glam-info-socials-row a {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #2A2A2A;
+  color: #9CA3AF;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.glam-info-socials-row a:hover {
+  border-color: #3B82F6;
+  color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ---------- RIGHT — Form card ---------- */
+.glam-contact-form-card {
+  background: #0F0F0F;
+  border: 1px solid #1A1A1A;
+  border-radius: 18px;
+  padding: 2rem 1.8rem;
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.9);
+}
+
+.glam-form-head {
+  margin-bottom: 1.4rem;
+}
+
+.glam-form-head h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 0.35rem;
+}
+
+.glam-form-head p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #9CA3AF;
+  font-weight: 300;
+}
+
+/* Alert */
+.glam-alert {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+}
+
+.glam-alert.success {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #86efac;
+}
+
+.glam-alert.error {
+  background: rgba(220, 53, 69, 0.1);
+  border: 1px solid rgba(220, 53, 69, 0.35);
+  color: #f5a6a6;
+}
+
+/* Form */
+.glam-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.glam-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.glam-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.glam-field label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #9CA3AF;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+/* Input */
+.glam-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #050505;
+  border: 1px solid #2A2A2A;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.glam-input:focus-within {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.glam-input.error {
+  border-color: rgba(220, 53, 69, 0.6);
+}
+
+.glam-input.error:focus-within {
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.12);
+}
+
+.glam-input > i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6B7280;
+  font-size: 0.95rem;
+  pointer-events: none;
+  transition: color 0.2s;
+}
+
+.glam-input.textarea > i {
+  top: 1rem;
+  transform: none;
+}
+
+.glam-input:focus-within > i { color: #3B82F6; }
+
+.glam-input input,
+.glam-input textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1rem 0.8rem 2.8rem;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.glam-input textarea {
+  padding-top: 0.85rem;
+  min-height: 110px;
+}
+
+.glam-input input::placeholder,
+.glam-input textarea::placeholder {
+  color: #6B7280;
+}
+
+.glam-err {
+  font-size: 0.75rem;
+  color: #f5a6a6;
+  padding-left: 0.2rem;
+}
+
+/* Submit */
+.glam-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  margin-top: 0.4rem;
+  background: #3B82F6;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.glam-submit:hover:not(:disabled) {
+  background: #2563EB;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(59, 130, 246, 0.5);
+}
+
+.glam-submit:active:not(:disabled) { transform: translateY(0); }
+
+.glam-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.glam-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #FFFFFF;
+  border-radius: 50%;
+  animation: glam-spin 0.7s linear infinite;
+}
+
+@keyframes glam-spin { to { transform: rotate(360deg); } }
+
+/* ---------- Bottom CTA ---------- */
+.glam-contact-cta {
+  position: relative;
+  z-index: 2;
+  max-width: 1150px;
+  margin: 3.5rem auto 0;
+}
+
+.glam-cta-inner {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(96, 165, 250, 0.04));
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 20px;
+  padding: 2.2rem 2rem;
+  text-align: center;
+}
+
+.glam-cta-inner h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 0.5rem;
+}
+
+.glam-cta-inner p {
+  color: #9CA3AF;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0 0 1.4rem;
+}
+
+.glam-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.6rem;
+  background: transparent;
+  border: 1px solid #3B82F6;
+  border-radius: 40px;
+  color: #60A5FA;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.glam-cta-btn:hover {
+  background: #3B82F6;
+  color: #FFFFFF;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px -10px rgba(59, 130, 246, 0.5);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+  .glam-contact-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .glam-contact-info {
+    order: 2;
+  }
+
+  .glam-contact-form-card {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .glam-contact-page {
+    padding: 2.5rem 1rem 4rem;
+  }
+
+  .glam-row-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .glam-contact-form-card {
+    padding: 1.6rem 1.2rem;
+  }
+
+  .glam-info-card {
+    padding: 1.1rem 1rem;
+  }
+
+  .glam-cta-inner {
+    padding: 1.6rem 1.2rem;
+  }
+
+  .glam-contact-title {
+    font-size: 1.7rem;
+  }
+}

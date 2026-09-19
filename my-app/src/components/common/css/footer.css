@@ -1,0 +1,339 @@
+/* ============================================
+   ISHANI COSMETICS - FOOTER
+   Cute + Soft + Professional ✨
+   ============================================ */
+
+.ishani-footer {
+  position: relative;
+  background: #050505;
+  border-top: 1px solid #1A1A1A;
+  margin-top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ✅ Cute Top Wave (Blue Glow) */
+.ishani-footer-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(59, 130, 246, 0.5) 20%,
+    rgba(147, 197, 253, 0.8) 50%,
+    rgba(59, 130, 246, 0.5) 80%,
+    transparent 100%
+  );
+}
+
+/* ============================================
+   BRAND COLUMN
+   ============================================ */
+.ishani-footer-logo-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ishani-footer-logo:hover .ishani-footer-logo-img {
+  border-color: #3B82F6;
+  transform: rotate(-5deg) scale(1.05);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.ishani-footer-logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ishani-footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.ishani-footer-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  color: #60A5FA;
+  text-transform: uppercase;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.ishani-footer-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  color: #9CA3AF;
+  line-height: 1.7;
+  max-width: 360px;
+}
+
+/* ============================================
+   CUTE SOCIAL ICONS
+   ============================================ */
+.ishani-footer-socials {
+  margin-top: 4px;
+}
+
+.ishani-footer-social {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid #2A2A2A;
+  background: rgba(255, 255, 255, 0.02);
+  color: #9CA3AF;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.ishani-footer-social::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--social-color, #3B82F6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.ishani-footer-social:hover {
+  border-color: var(--social-color, #3B82F6);
+  color: #FFFFFF;
+  transform: translateY(-4px) rotate(-3deg);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
+}
+
+/* ============================================
+   CUTE HEADINGS (with icon badge)
+   ============================================ */
+.ishani-footer-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.ishani-heading-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(96, 165, 250, 0.1));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #60A5FA;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   CUTE LISTS
+   ============================================ */
+.ishani-footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.ishani-footer-list li {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #9CA3AF;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.ishani-footer-list li i {
+  color: #60A5FA;
+  font-size: 14px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+/* ✅ Cute Link with Icon */
+.ishani-footer-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #9CA3AF;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0;
+}
+
+.ishani-footer-link i {
+  color: #6B7280;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.ishani-footer-link:hover {
+  color: #FFFFFF;
+  transform: translateX(4px);
+}
+
+.ishani-footer-link:hover i {
+  color: #60A5FA;
+  transform: scale(1.15) rotate(-5deg);
+}
+
+/* Dummy links */
+.ishani-footer-dummy {
+  cursor: default;
+}
+
+.ishani-footer-dummy:hover {
+  color: #9CA3AF;
+  transform: none;
+}
+
+.ishani-footer-dummy:hover i {
+  color: #6B7280;
+  transform: none;
+}
+
+/* ============================================
+   BOTTOM BAR
+   ============================================ */
+.ishani-footer-bottom {
+  border-top: 1px solid #1A1A1A;
+}
+
+.ishani-footer-copy {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  color: #6B7280;
+}
+
+.ishani-footer-copy span {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.ishani-heart {
+  color: #EF4444;
+  animation: heartBeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* ============================================
+   CUTE PAYMENT CHIPS
+   ============================================ */
+.ishani-footer-pay-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #9CA3AF;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.ishani-footer-pay-label i {
+  color: #60A5FA;
+  font-size: 13px;
+}
+
+.ishani-pay-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #1F1F1F;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: #9CA3AF;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: default;
+}
+
+.ishani-pay-chip i {
+  font-size: 14px;
+  color: #60A5FA;
+  transition: transform 0.3s ease;
+}
+
+.ishani-pay-chip:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #FFFFFF;
+  background: rgba(59, 130, 246, 0.08);
+  transform: translateY(-2px);
+}
+
+.ishani-pay-chip:hover i {
+  transform: scale(1.15);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 991px) {
+  .ishani-footer-desc {
+    max-width: 100%;
+  }
+
+  .ishani-footer-heading {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ishani-footer-bottom {
+    text-align: center;
+  }
+
+  .ishani-footer-payments {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .ishani-footer-pay-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ishani-footer-socials {
+    justify-content: flex-start;
+  }
+}
